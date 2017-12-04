@@ -9,15 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        imageView.layer.borderWidth = 2
+        imageView.layer.borderColor = UIColor.blue.cgColor
+        imageView.layer.cornerRadius = 70
+        imageView.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+      
+        
+        self.btn1.layer.cornerRadius = self.btn1.frame.size.width/4;
     }
 
 
