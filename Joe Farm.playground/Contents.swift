@@ -71,26 +71,50 @@ while days < 30 {
     }
     days += 1
 }
+
+//exercice 9
+
+var notesDeLaClasse = [18, 4, 14, 15, 17, 15, 9, 20, 19, 11, 12, 14]
+notesDeLaClasse.append(13)
+
+
+var somme = 0
+for note in notesDeLaClasse {
+    somme += note
+    }
+var moyenne = somme / notesDeLaClasse.count
+print("La moyenne de la classe est egale a \(moyenne)")
 */
 
-// exercice Joe
+
+//Exercice joe
+
 
 var price = 1499.0
 var money = 0.0
 var day = 0
+var barn = [0, 0, 0]
+var barnSize = 0
+for goods in barn {
+    barnSize += goods
+}
 while money < price {
     money -= 4
-    money += 30 * 0.5
     if day % 30 == 1 {
-        money += 100 * 0.3
+        barn[1] += 100
     }
     else if day % 30 == 10 || day % 30 == 20 {
-        money += 30 * 1
+        barn [2] += 30
     }
-    day += 1
-}
-print("Joe doit economiser pendant \(day) jours pour arriver a la somme de \(Int(money)) Euros")
+    else {
+        barn[0] += 30
+    }
 
+    day += 1
+   
+}
+
+print("Joe doit economiser pendant \(day) jours pour arriver a la somme de \(Int(money)) Euros")
 
 
 
