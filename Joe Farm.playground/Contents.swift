@@ -90,14 +90,10 @@ print("La moyenne de la classe est egale a \(moyenne)")
 //Exercice joe
 
 
-var price = 1499.0
+/*var price = 1499.0
 var money = 0.0
 var day = 0
 var barn = [0, 0, 0]
-var barnSize = 0
-for goods in barn {
-    barnSize += goods
-}
 while money < price {
     money -= 4
     if day % 30 == 1 {
@@ -114,7 +110,7 @@ while money < price {
    
 }
 
-print("Joe doit economiser pendant \(day) jours pour arriver a la somme de \(Int(money)) Euros")
+print("Joe doit economiser pendant \(day) jours pour arriver a la somme de \(Int(money)) Euros")*/
 
 
 
